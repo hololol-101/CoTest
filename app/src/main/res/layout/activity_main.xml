@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/ivMainlevel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/calculate_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:textSize="20dp"
+                android:id="@+id/tvMainnick"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경험지"
+                android:id="@+id/tvMainExpr"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnMainsolve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="푼 문제"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btnMainnsolve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+
+                android:text="미해결 문제"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한 일"/>
+
+        <CalendarView
+            android:id="@+id/cvMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/lvMtodo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnMainmy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colol1"
+            android:textColor="@color/basicColor"
+            android:text="홈 화면"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnMaintest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/basicColor"
+            android:background="@color/colol1"
+            android:layout_marginHorizontal="10dp"
+            android:text="코딩대회" />
+        <Button
+            android:id="@+id/btnMainboard"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="기출문제"
+            android:background="@color/colol1"
+            android:textColor="@color/basicColor"
+            />
+
+    </LinearLayout>
+</LinearLayout>

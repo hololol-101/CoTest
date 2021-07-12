@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/tvQsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문제이름"
+        android:textSize="40dp" />
+    <TextView
+        android:id="@+id/tvBacknum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="백준 문제번호: "/>
+    <WebView
+        android:id="@+id/wvQurl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경과 시간: "/>
+        <Chronometer
+            android:id="@+id/qTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format="%s"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnQstart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="시   작"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lvQbtn"
+            android:visibility="invisible">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnQfinish"
+                android:text="완   료"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnQgiveUP"
+                android:text="포   기"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

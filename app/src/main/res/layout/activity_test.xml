@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".TestActivity">
+    <TextView
+        android:id="@+id/timeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/q1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1" android:layout_marginRight="5dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/q2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/q3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3" android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/q4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/backurl"/>
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="완   료"/>
+</LinearLayout>
